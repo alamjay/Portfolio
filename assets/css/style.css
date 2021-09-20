@@ -6,6 +6,12 @@ h1, h2 {
     font-family: 'Roboto', sans-serif;
 }
 
+section:not(#home) {
+    padding: 170px 0 170px 0;
+}
+
+/* Hero */
+
 .hero-title {
     color: white;
     display: flex;
@@ -108,6 +114,17 @@ h1, h2 {
   animation-delay: 3s;
 }
 
+/* Keping the Quality of image  */
+@media screen and (max-width: 768px) {
+    .hero-background {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      
+    }
+}
+
 @keyframes zoomInAndOut {
     0%  { height: 100vh; width: 100vw; }
     25% { height: 105vh; background-position: center center; object-fit: cover; }
@@ -167,4 +184,21 @@ h1, h2 {
 .st4 {
     top: 90%;
     animation-duration:3s;
+}
+
+/* Navigation */
+.nav-item {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-spacing {
+        margin-left: 250px;
+    }
+
+    .nav-item {
+        margin-left: 50px;
+    }
 }
