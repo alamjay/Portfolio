@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function(){
     var initialNavPosition = nav.offsetTop;
 
     window.addEventListener('scroll', function() {
-        console.log(window.scrollY);
 
         if (window.scrollY > initialNavPosition) {
           nav.classList.add('fixed-top');
